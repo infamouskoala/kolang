@@ -7,9 +7,17 @@ Ext()
 
 file = open(filename,"r")  
 reader = file.read()
+word = reader.split()
 
+# basic eval
 for i in reader:
-    if i in ['+','-','*','**','/','//']:
+    if i[0] in ["1","2","3","4","5","6","7","8","9","0"]:
         print(BasicEval(reader))
-    elif i in ["int()"]:
+
+# Integration
+    elif i[0] == "I" or i[0] == "i":
         print(Integration(reader))
+
+# Matrix
+    elif i[0] == "M" or i[0] == "m":
+        print("")
