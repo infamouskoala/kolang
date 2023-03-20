@@ -1,4 +1,7 @@
 import sys
+
+# reading .kl extension using sys
+
 def Ext():
     filename = sys.argv[1]  
     if not filename.endswith('.kl'):
