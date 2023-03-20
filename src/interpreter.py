@@ -11,10 +11,13 @@ def Integration(input):
     filename = sys.argv[1]
     file = open(filename,"r")
     input = file.read()
+
+    # empty function
     if input == "int()":
-        print("Function is empty!")
+        return(f"Integration function in file {filename} is empty!")
+    # Integration of (dx)
     elif input == "int(dx)":
-        x = "x"
-        return x
+        return "x"
+
     else:
         print("Syntax error, Invalid syntax in file", filename)
