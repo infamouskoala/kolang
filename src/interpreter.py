@@ -18,6 +18,11 @@ def Integration(input):
     # Integration of (dx)
     elif input == "int(dx)":
         return "x"
-
+    # integration of 1/x or x inverse
+    elif input == "int(1/x)" or input == "x^-1":
+        return "log(x)"
+    # integration of log x
+    elif input == "int(log(x))":
+        return "xlogx - x"
     else:
         print("Syntax error, Invalid syntax in file", filename)
