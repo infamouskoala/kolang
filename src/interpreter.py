@@ -7,7 +7,7 @@ def BasicEval(expression):
     x = eval(expression)
     return x
 
-def Integration(input):
+def BasicIntegration(input):
     filename = sys.argv[1]
     file = open(filename,"r")
     input = file.read()
